@@ -1,1 +1,1 @@
-Lorem ipsum
+This is a test README
