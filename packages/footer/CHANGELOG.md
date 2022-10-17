@@ -1,5 +1,11 @@
 # footer_testing123
 
+## 0.4.0
+
+### Minor Changes
+
+- 16438e7: shouldn't appear in prod deployment
+
 ## 0.3.0
 
 ### Minor Changes
