@@ -1,4 +1,4 @@
-name: Release
+name: Change Notes
 
 on:
   push:
@@ -9,7 +9,7 @@ concurrency: ${{ github.workflow }}-${{ github.ref }}
 
 jobs:
   release:
-    name: Release
+    name: Change Notes
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Repo
@@ -23,7 +23,7 @@ jobs:
       - name: Install Dependencies
         run: npm install
 
-      - name: Create Release Pull Request
+      - name: Create Change Notes Pull Request
         uses: changesets/action@v1
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
