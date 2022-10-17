@@ -1,4 +1,7 @@
 name: Publish Package to npmjs
+- uses: actions/checkout@v3
+  with:
+    ref: prod
 on:
   release:
     types: [created]
