@@ -12,6 +12,10 @@ jobs:
         with:
           node-version: "18.x"
           registry-url: "https://registry.npmjs.org"
+
+      - name: Install Dependencies
+        run: npm install
+
       - run: npx changeset publish
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
